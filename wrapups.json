@@ -1,0 +1,245 @@
+{
+  "entities": [
+    {
+      "id": "73e251d3-345f-40ca-ae69-5c44804c1da0",
+      "name": "Complaint_Application_Image Upload Issue",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/73e251d3-345f-40ca-ae69-5c44804c1da0"
+    },
+    {
+      "id": "9d9780cf-9855-4e2e-bf01-c03b4472b263",
+      "name": "Complaint_Application_Login Issue",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/9d9780cf-9855-4e2e-bf01-c03b4472b263"
+    },
+    {
+      "id": "89485e45-c25c-421c-8c04-31ed8f343809",
+      "name": "Complaint_Application_Registration Issue",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/89485e45-c25c-421c-8c04-31ed8f343809"
+    },
+    {
+      "id": "fa80d8c3-b2c3-4460-85c7-406009912ad1",
+      "name": "Complaint_Billing & Payment_Incorrect Bill",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/fa80d8c3-b2c3-4460-85c7-406009912ad1"
+    },
+    {
+      "id": "77cf5c4b-5e6c-4e18-8b5a-b1e6c6a5fd05",
+      "name": "Complaint_Billing & Payment_Meter Reading Dispute",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/77cf5c4b-5e6c-4e18-8b5a-b1e6c6a5fd05"
+    },
+    {
+      "id": "900e95d1-7130-4382-8d08-ca961a06f7ce",
+      "name": "Complaint_Gas Connection_Connection Delay",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/900e95d1-7130-4382-8d08-ca961a06f7ce"
+    },
+    {
+      "id": "588e7990-0784-4ba1-b9fe-0b2e43d22a44",
+      "name": "Complaint_Gas Disconnection_Disconnection Delay",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/588e7990-0784-4ba1-b9fe-0b2e43d22a44"
+    },
+    {
+      "id": "a0d6266b-56a3-44f3-b5ab-617657583034",
+      "name": "Complaint_Project_Project Complaint",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/a0d6266b-56a3-44f3-b5ab-617657583034"
+    },
+    {
+      "id": "2e56fcda-38ac-4178-9f9f-e3d2f4ff2b46",
+      "name": "Complaint_Service Quality_Behaviour",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/2e56fcda-38ac-4178-9f9f-e3d2f4ff2b46"
+    },
+    {
+      "id": "c32820c0-0036-4afe-a0c8-faade32307e9",
+      "name": "Complaint_Service Quality_Inaccurate Information",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/c32820c0-0036-4afe-a0c8-faade32307e9"
+    },
+    {
+      "id": "8e68c48b-c312-4120-8adc-9b6bd9ec12e6",
+      "name": "Complaint_Service Quality_Not Helpful",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/8e68c48b-c312-4120-8adc-9b6bd9ec12e6"
+    },
+    {
+      "id": "b88eafe1-64f4-45c4-88b2-880b373f939e",
+      "name": "Complaint_Technical / Meter_Estimated Reading Issue",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/b88eafe1-64f4-45c4-88b2-880b373f939e"
+    },
+    {
+      "id": "b35d7856-daa5-4156-93b9-59098dbaedc9",
+      "name": "Complaint_Technical / Meter_Incorrect Reading",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/b35d7856-daa5-4156-93b9-59098dbaedc9"
+    },
+    {
+      "id": "5a5ff277-756f-4862-b6a6-1475c9cddadc",
+      "name": "Complaint_Technical / Meter_Meter / Device Fault",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/5a5ff277-756f-4862-b6a6-1475c9cddadc"
+    },
+    {
+      "id": "97a4182d-c79b-43b3-a918-2c3c5e49198b",
+      "name": "Emergency_Emergency_Fire / Risk",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/97a4182d-c79b-43b3-a918-2c3c5e49198b"
+    },
+    {
+      "id": "f95fd871-4890-4b7b-b7ed-5185be49f0ce",
+      "name": "Emergency_Emergency_Gas Leak",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/f95fd871-4890-4b7b-b7ed-5185be49f0ce"
+    },
+    {
+      "id": "a27fee9e-22c2-4f1c-b2d2-1b8372b570f8",
+      "name": "Emergency_Emergency_Gas Odor",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/a27fee9e-22c2-4f1c-b2d2-1b8372b570f8"
+    },
+    {
+      "id": "14ed8143-4aa5-4cc9-994c-eef68e199803",
+      "name": "Emergency_Emergency_No Gas Supply",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/14ed8143-4aa5-4cc9-994c-eef68e199803"
+    },
+    {
+      "id": "d06b7974-650c-4dd6-ae52-b4e43c67858b",
+      "name": "Inquiry_Account Management_Account Status",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/d06b7974-650c-4dd6-ae52-b4e43c67858b"
+    },
+    {
+      "id": "ae290689-8056-4dfd-816d-a8b52ba058d8",
+      "name": "Inquiry_Billing & Payment_Estimated Reading",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/ae290689-8056-4dfd-816d-a8b52ba058d8"
+    },
+    {
+      "id": "ac7d685a-ea3f-449b-9c6e-b7ad4c5cb499",
+      "name": "Inquiry_Billing & Payment_Fees Inquiry",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/ac7d685a-ea3f-449b-9c6e-b7ad4c5cb499"
+    },
+    {
+      "id": "51308ecf-f3e3-4f39-9d9d-4495b3c69974",
+      "name": "Inquiry_Billing & Payment_Payment Confirmation",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/51308ecf-f3e3-4f39-9d9d-4495b3c69974"
+    },
+    {
+      "id": "9850691d-c39c-4906-b502-d5316553d349",
+      "name": "Inquiry_Connection_Connection Status",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/9850691d-c39c-4906-b502-d5316553d349"
+    },
+    {
+      "id": "5644115a-db55-4958-96e0-6823ab6ac9e0",
+      "name": "Inquiry_Disconnection_Disconnection Status",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/5644115a-db55-4958-96e0-6823ab6ac9e0"
+    },
+    {
+      "id": "a1e08016-0ddb-4841-babe-90f41539d39d",
+      "name": "Inquiry_General_Office Location",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/a1e08016-0ddb-4841-babe-90f41539d39d"
+    },
+    {
+      "id": "b1e0292e-db3b-4066-878c-94d079ebc17a",
+      "name": "Inquiry_General_Working Hours",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/b1e0292e-db3b-4066-878c-94d079ebc17a"
+    },
+    {
+      "id": "8581284d-7f55-4b3b-b985-9e8436204af3",
+      "name": "Request_Account Management_Update Contact Details",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/8581284d-7f55-4b3b-b985-9e8436204af3"
+    },
+    {
+      "id": "b997bc54-6d2d-4cf9-a2bd-1845c317be3a",
+      "name": "Request_Billing & Payment_Refund / Credit Request",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/b997bc54-6d2d-4cf9-a2bd-1845c317be3a"
+    },
+    {
+      "id": "ddc23ffb-b74c-4e54-a6cb-130eb26ef0bc",
+      "name": "Request_Collection_Disconnection Warning",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/ddc23ffb-b74c-4e54-a6cb-130eb26ef0bc"
+    },
+    {
+      "id": "cbe479d3-8dad-4aaf-9829-4a8abcd3211c",
+      "name": "Request_Collection_Not Reachable Customer",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/cbe479d3-8dad-4aaf-9829-4a8abcd3211c"
+    },
+    {
+      "id": "1bab8c03-bd2e-421e-8f65-c664522adddc",
+      "name": "Request_Collection_Payment Promise",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/1bab8c03-bd2e-421e-8f65-c664522adddc"
+    },
+    {
+      "id": "9ec28377-b5d0-43d7-88cf-0664fba9f3a8",
+      "name": "Request_Collection_Vacant Unit with outstanding",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/9ec28377-b5d0-43d7-88cf-0664fba9f3a8"
+    },
+    {
+      "id": "e7ac182d-72e2-4817-b57b-8e451b740904",
+      "name": "Request_Connection_New Connection",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/e7ac182d-72e2-4817-b57b-8e451b740904"
+    },
+    {
+      "id": "532633c1-840c-4ea4-bbd3-0b9f0bde652b",
+      "name": "Request_Disconnection_Service Disconnection",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/532633c1-840c-4ea4-bbd3-0b9f0bde652b"
+    },
+    {
+      "id": "69d16780-2508-4647-bbad-bc17ad2da447",
+      "name": "Request_Reconnection_Service Reconnection",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/69d16780-2508-4647-bbad-bc17ad2da447"
+    },
+    {
+      "id": "7c7d4e8e-8bfb-4696-a7d1-43f33e271eed",
+      "name": "Sales & Project_Sales & Project_Fir fighting System",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/7c7d4e8e-8bfb-4696-a7d1-43f33e271eed"
+    },
+    {
+      "id": "e820feed-9985-4bb1-8944-02e0b3f8edd7",
+      "name": "Sales & Project_Sales & Project_Follow up",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/e820feed-9985-4bb1-8944-02e0b3f8edd7"
+    },
+    {
+      "id": "dfcf530a-a7de-4b70-94a9-5905074d3de5",
+      "name": "Sales & Project_Sales & Project_gas project sales",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/dfcf530a-a7de-4b70-94a9-5905074d3de5"
+    },
+    {
+      "id": "5b1a278e-380c-4890-947b-64f930c3c5c8",
+      "name": "Sales & Project_Sales & Project_vertical Tanks / Cylinders",
+      "description": "",
+      "selfUri": "/api/v2/routing/wrapupcodes/5b1a278e-380c-4890-947b-64f930c3c5c8"
+    }
+  ],
+  "pageSize": 39,
+  "pageNumber": 1,
+  "total": 39,
+  "firstUri": "/api/v2/routing/queues/fca4be0e-de44-47ef-b200-3610915cf7fa/wrapupcodes?pageSize=39&pageNumber=1",
+  "lastUri": "/api/v2/routing/queues/fca4be0e-de44-47ef-b200-3610915cf7fa/wrapupcodes?pageSize=39&pageNumber=1",
+  "selfUri": "/api/v2/routing/queues/fca4be0e-de44-47ef-b200-3610915cf7fa/wrapupcodes?pageSize=39&pageNumber=1",
+  "pageCount": 1
+}

@@ -1,0 +1,1184 @@
+{
+  "entities": [
+    {
+      "id": "fca4be0e-de44-47ef-b200-3610915cf7fa",
+      "name": "Account_Ar",
+      "division": {
+        "id": "48251279-48e3-4357-8964-88dd7dc85af9",
+        "name": "Home",
+        "selfUri": "/api/v2/authorization/divisions/48251279-48e3-4357-8964-88dd7dc85af9"
+      },
+      "dateCreated": "2026-04-22T06:19:30.018Z",
+      "dateModified": "2026-04-22T06:45:21.514Z",
+      "modifiedBy": "3aee1e22-ce2a-45dd-a2a6-52f0ed532fd0",
+      "createdBy": "3aee1e22-ce2a-45dd-a2a6-52f0ed532fd0",
+      "memberCount": 0,
+      "userMemberCount": 0,
+      "joinedMemberCount": 0,
+      "mediaSettings": {
+        "call": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "callback": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          },
+          "mode": "AgentFirst",
+          "enableAutoDialAndEnd": false,
+          "autoDialDelaySeconds": 300,
+          "autoEndDelaySeconds": 300
+        },
+        "chat": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "email": {
+          "alertingTimeoutSeconds": 300,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 86400000
+          }
+        },
+        "message": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        }
+      },
+      "scoringMethod": "TimestampAndPriority",
+      "lastAgentRoutingMode": "AnyAgent",
+      "acwSettings": {
+        "wrapupPrompt": "OPTIONAL"
+      },
+      "skillEvaluationMethod": "ALL",
+      "autoAnswerOnly": false,
+      "callingPartyName": "Sergas Account Arabic",
+      "defaultScripts": {},
+      "suppressInQueueCallRecording": true,
+      "selfUri": "/api/v2/routing/queues/fca4be0e-de44-47ef-b200-3610915cf7fa"
+    },
+    {
+      "id": "c5b0fced-14b7-4af6-977a-050728066eaa",
+      "name": "Account_En",
+      "division": {
+        "id": "48251279-48e3-4357-8964-88dd7dc85af9",
+        "name": "Home",
+        "selfUri": "/api/v2/authorization/divisions/48251279-48e3-4357-8964-88dd7dc85af9"
+      },
+      "dateCreated": "2026-04-22T06:19:46.487Z",
+      "createdBy": "3aee1e22-ce2a-45dd-a2a6-52f0ed532fd0",
+      "memberCount": 0,
+      "userMemberCount": 0,
+      "joinedMemberCount": 0,
+      "mediaSettings": {
+        "call": {
+          "alertingTimeoutSeconds": 8,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "callback": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          },
+          "mode": "AgentFirst",
+          "enableAutoDialAndEnd": false,
+          "autoDialDelaySeconds": 300,
+          "autoEndDelaySeconds": 300
+        },
+        "chat": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "email": {
+          "alertingTimeoutSeconds": 300,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 86400000
+          }
+        },
+        "message": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        }
+      },
+      "scoringMethod": "TimestampAndPriority",
+      "lastAgentRoutingMode": "AnyAgent",
+      "acwSettings": {
+        "wrapupPrompt": "OPTIONAL"
+      },
+      "skillEvaluationMethod": "ALL",
+      "autoAnswerOnly": false,
+      "defaultScripts": {},
+      "suppressInQueueCallRecording": true,
+      "selfUri": "/api/v2/routing/queues/c5b0fced-14b7-4af6-977a-050728066eaa"
+    },
+    {
+      "id": "45478428-760a-4889-8777-e006c884091e",
+      "name": "Billing_Dispute_Ar",
+      "division": {
+        "id": "48251279-48e3-4357-8964-88dd7dc85af9",
+        "name": "Home",
+        "selfUri": "/api/v2/authorization/divisions/48251279-48e3-4357-8964-88dd7dc85af9"
+      },
+      "dateCreated": "2026-04-22T06:20:18.374Z",
+      "createdBy": "3aee1e22-ce2a-45dd-a2a6-52f0ed532fd0",
+      "memberCount": 0,
+      "userMemberCount": 0,
+      "joinedMemberCount": 0,
+      "mediaSettings": {
+        "call": {
+          "alertingTimeoutSeconds": 8,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "callback": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          },
+          "mode": "AgentFirst",
+          "enableAutoDialAndEnd": false,
+          "autoDialDelaySeconds": 300,
+          "autoEndDelaySeconds": 300
+        },
+        "chat": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "email": {
+          "alertingTimeoutSeconds": 300,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 86400000
+          }
+        },
+        "message": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        }
+      },
+      "scoringMethod": "TimestampAndPriority",
+      "lastAgentRoutingMode": "AnyAgent",
+      "acwSettings": {
+        "wrapupPrompt": "OPTIONAL"
+      },
+      "skillEvaluationMethod": "ALL",
+      "autoAnswerOnly": false,
+      "defaultScripts": {},
+      "suppressInQueueCallRecording": true,
+      "selfUri": "/api/v2/routing/queues/45478428-760a-4889-8777-e006c884091e"
+    },
+    {
+      "id": "3f3f3648-750d-44d3-b2e2-c7aea21a751d",
+      "name": "Billing_Dispute_En",
+      "division": {
+        "id": "48251279-48e3-4357-8964-88dd7dc85af9",
+        "name": "Home",
+        "selfUri": "/api/v2/authorization/divisions/48251279-48e3-4357-8964-88dd7dc85af9"
+      },
+      "dateCreated": "2026-04-22T06:20:31.191Z",
+      "createdBy": "3aee1e22-ce2a-45dd-a2a6-52f0ed532fd0",
+      "memberCount": 0,
+      "userMemberCount": 0,
+      "joinedMemberCount": 0,
+      "mediaSettings": {
+        "call": {
+          "alertingTimeoutSeconds": 8,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "callback": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          },
+          "mode": "AgentFirst",
+          "enableAutoDialAndEnd": false,
+          "autoDialDelaySeconds": 300,
+          "autoEndDelaySeconds": 300
+        },
+        "chat": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "email": {
+          "alertingTimeoutSeconds": 300,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 86400000
+          }
+        },
+        "message": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        }
+      },
+      "scoringMethod": "TimestampAndPriority",
+      "lastAgentRoutingMode": "AnyAgent",
+      "acwSettings": {
+        "wrapupPrompt": "OPTIONAL"
+      },
+      "skillEvaluationMethod": "ALL",
+      "autoAnswerOnly": false,
+      "defaultScripts": {},
+      "suppressInQueueCallRecording": true,
+      "selfUri": "/api/v2/routing/queues/3f3f3648-750d-44d3-b2e2-c7aea21a751d"
+    },
+    {
+      "id": "c7ef5edd-c0c9-465f-aec7-192f14f3cf68",
+      "name": "Billing_Pay_Ar",
+      "division": {
+        "id": "48251279-48e3-4357-8964-88dd7dc85af9",
+        "name": "Home",
+        "selfUri": "/api/v2/authorization/divisions/48251279-48e3-4357-8964-88dd7dc85af9"
+      },
+      "dateCreated": "2026-04-22T06:19:56.785Z",
+      "createdBy": "3aee1e22-ce2a-45dd-a2a6-52f0ed532fd0",
+      "memberCount": 0,
+      "userMemberCount": 0,
+      "joinedMemberCount": 0,
+      "mediaSettings": {
+        "call": {
+          "alertingTimeoutSeconds": 8,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "callback": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          },
+          "mode": "AgentFirst",
+          "enableAutoDialAndEnd": false,
+          "autoDialDelaySeconds": 300,
+          "autoEndDelaySeconds": 300
+        },
+        "chat": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "email": {
+          "alertingTimeoutSeconds": 300,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 86400000
+          }
+        },
+        "message": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        }
+      },
+      "scoringMethod": "TimestampAndPriority",
+      "lastAgentRoutingMode": "AnyAgent",
+      "acwSettings": {
+        "wrapupPrompt": "OPTIONAL"
+      },
+      "skillEvaluationMethod": "ALL",
+      "autoAnswerOnly": false,
+      "defaultScripts": {},
+      "suppressInQueueCallRecording": true,
+      "selfUri": "/api/v2/routing/queues/c7ef5edd-c0c9-465f-aec7-192f14f3cf68"
+    },
+    {
+      "id": "d2ddac6f-fc33-4aac-9f2c-11f42dc4016d",
+      "name": "Billing_Pay_En",
+      "division": {
+        "id": "48251279-48e3-4357-8964-88dd7dc85af9",
+        "name": "Home",
+        "selfUri": "/api/v2/authorization/divisions/48251279-48e3-4357-8964-88dd7dc85af9"
+      },
+      "dateCreated": "2026-04-22T06:20:08.740Z",
+      "createdBy": "3aee1e22-ce2a-45dd-a2a6-52f0ed532fd0",
+      "memberCount": 0,
+      "userMemberCount": 0,
+      "joinedMemberCount": 0,
+      "mediaSettings": {
+        "call": {
+          "alertingTimeoutSeconds": 8,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "callback": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          },
+          "mode": "AgentFirst",
+          "enableAutoDialAndEnd": false,
+          "autoDialDelaySeconds": 300,
+          "autoEndDelaySeconds": 300
+        },
+        "chat": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "email": {
+          "alertingTimeoutSeconds": 300,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 86400000
+          }
+        },
+        "message": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        }
+      },
+      "scoringMethod": "TimestampAndPriority",
+      "lastAgentRoutingMode": "AnyAgent",
+      "acwSettings": {
+        "wrapupPrompt": "OPTIONAL"
+      },
+      "skillEvaluationMethod": "ALL",
+      "autoAnswerOnly": false,
+      "defaultScripts": {},
+      "suppressInQueueCallRecording": true,
+      "selfUri": "/api/v2/routing/queues/d2ddac6f-fc33-4aac-9f2c-11f42dc4016d"
+    },
+    {
+      "id": "9662876c-bb77-40b7-9293-0dcf3b435bf5",
+      "name": "GasEmegency_Ar",
+      "division": {
+        "id": "48251279-48e3-4357-8964-88dd7dc85af9",
+        "name": "Home",
+        "selfUri": "/api/v2/authorization/divisions/48251279-48e3-4357-8964-88dd7dc85af9"
+      },
+      "dateCreated": "2026-04-22T06:18:01.297Z",
+      "createdBy": "3aee1e22-ce2a-45dd-a2a6-52f0ed532fd0",
+      "memberCount": 2,
+      "userMemberCount": 2,
+      "joinedMemberCount": 2,
+      "mediaSettings": {
+        "call": {
+          "alertingTimeoutSeconds": 8,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "callback": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          },
+          "mode": "AgentFirst",
+          "enableAutoDialAndEnd": false,
+          "autoDialDelaySeconds": 300,
+          "autoEndDelaySeconds": 300
+        },
+        "chat": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "email": {
+          "alertingTimeoutSeconds": 300,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 86400000
+          }
+        },
+        "message": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        }
+      },
+      "scoringMethod": "TimestampAndPriority",
+      "lastAgentRoutingMode": "AnyAgent",
+      "acwSettings": {
+        "wrapupPrompt": "OPTIONAL"
+      },
+      "skillEvaluationMethod": "ALL",
+      "autoAnswerOnly": false,
+      "defaultScripts": {},
+      "suppressInQueueCallRecording": true,
+      "selfUri": "/api/v2/routing/queues/9662876c-bb77-40b7-9293-0dcf3b435bf5"
+    },
+    {
+      "id": "47ca2b5a-0ca6-485d-9238-71992032af8d",
+      "name": "GasEmegency_En",
+      "division": {
+        "id": "48251279-48e3-4357-8964-88dd7dc85af9",
+        "name": "Home",
+        "selfUri": "/api/v2/authorization/divisions/48251279-48e3-4357-8964-88dd7dc85af9"
+      },
+      "dateCreated": "2026-04-22T06:18:21.200Z",
+      "createdBy": "3aee1e22-ce2a-45dd-a2a6-52f0ed532fd0",
+      "memberCount": 2,
+      "userMemberCount": 2,
+      "joinedMemberCount": 2,
+      "mediaSettings": {
+        "call": {
+          "alertingTimeoutSeconds": 8,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "callback": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          },
+          "mode": "AgentFirst",
+          "enableAutoDialAndEnd": false,
+          "autoDialDelaySeconds": 300,
+          "autoEndDelaySeconds": 300
+        },
+        "chat": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "email": {
+          "alertingTimeoutSeconds": 300,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 86400000
+          }
+        },
+        "message": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        }
+      },
+      "scoringMethod": "TimestampAndPriority",
+      "lastAgentRoutingMode": "AnyAgent",
+      "acwSettings": {
+        "wrapupPrompt": "OPTIONAL"
+      },
+      "skillEvaluationMethod": "ALL",
+      "autoAnswerOnly": false,
+      "defaultScripts": {},
+      "suppressInQueueCallRecording": true,
+      "selfUri": "/api/v2/routing/queues/47ca2b5a-0ca6-485d-9238-71992032af8d"
+    },
+    {
+      "id": "a2f84c54-d9d0-44ad-967e-0682c25f2c80",
+      "name": "GasSerives_FollowUp_Ar",
+      "division": {
+        "id": "48251279-48e3-4357-8964-88dd7dc85af9",
+        "name": "Home",
+        "selfUri": "/api/v2/authorization/divisions/48251279-48e3-4357-8964-88dd7dc85af9"
+      },
+      "dateCreated": "2026-04-22T06:19:08.267Z",
+      "createdBy": "3aee1e22-ce2a-45dd-a2a6-52f0ed532fd0",
+      "memberCount": 0,
+      "userMemberCount": 0,
+      "joinedMemberCount": 0,
+      "mediaSettings": {
+        "call": {
+          "alertingTimeoutSeconds": 8,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "callback": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          },
+          "mode": "AgentFirst",
+          "enableAutoDialAndEnd": false,
+          "autoDialDelaySeconds": 300,
+          "autoEndDelaySeconds": 300
+        },
+        "chat": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "email": {
+          "alertingTimeoutSeconds": 300,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 86400000
+          }
+        },
+        "message": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        }
+      },
+      "scoringMethod": "TimestampAndPriority",
+      "lastAgentRoutingMode": "AnyAgent",
+      "acwSettings": {
+        "wrapupPrompt": "OPTIONAL"
+      },
+      "skillEvaluationMethod": "ALL",
+      "autoAnswerOnly": false,
+      "defaultScripts": {},
+      "suppressInQueueCallRecording": true,
+      "selfUri": "/api/v2/routing/queues/a2f84c54-d9d0-44ad-967e-0682c25f2c80"
+    },
+    {
+      "id": "f5999efa-fd42-4970-b2b7-c53242d6c8ce",
+      "name": "GasSerives_FollowUp_En",
+      "division": {
+        "id": "48251279-48e3-4357-8964-88dd7dc85af9",
+        "name": "Home",
+        "selfUri": "/api/v2/authorization/divisions/48251279-48e3-4357-8964-88dd7dc85af9"
+      },
+      "dateCreated": "2026-04-22T06:19:18.864Z",
+      "createdBy": "3aee1e22-ce2a-45dd-a2a6-52f0ed532fd0",
+      "memberCount": 0,
+      "userMemberCount": 0,
+      "joinedMemberCount": 0,
+      "mediaSettings": {
+        "call": {
+          "alertingTimeoutSeconds": 8,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "callback": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          },
+          "mode": "AgentFirst",
+          "enableAutoDialAndEnd": false,
+          "autoDialDelaySeconds": 300,
+          "autoEndDelaySeconds": 300
+        },
+        "chat": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "email": {
+          "alertingTimeoutSeconds": 300,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 86400000
+          }
+        },
+        "message": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        }
+      },
+      "scoringMethod": "TimestampAndPriority",
+      "lastAgentRoutingMode": "AnyAgent",
+      "acwSettings": {
+        "wrapupPrompt": "OPTIONAL"
+      },
+      "skillEvaluationMethod": "ALL",
+      "autoAnswerOnly": false,
+      "defaultScripts": {},
+      "suppressInQueueCallRecording": true,
+      "selfUri": "/api/v2/routing/queues/f5999efa-fd42-4970-b2b7-c53242d6c8ce"
+    },
+    {
+      "id": "50e6686b-a16f-4841-a278-e16ed8700f22",
+      "name": "GasSerives_NewRequest_Ar",
+      "division": {
+        "id": "48251279-48e3-4357-8964-88dd7dc85af9",
+        "name": "Home",
+        "selfUri": "/api/v2/authorization/divisions/48251279-48e3-4357-8964-88dd7dc85af9"
+      },
+      "dateCreated": "2026-04-22T06:18:37.565Z",
+      "createdBy": "3aee1e22-ce2a-45dd-a2a6-52f0ed532fd0",
+      "memberCount": 0,
+      "userMemberCount": 0,
+      "joinedMemberCount": 0,
+      "mediaSettings": {
+        "call": {
+          "alertingTimeoutSeconds": 8,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "callback": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          },
+          "mode": "AgentFirst",
+          "enableAutoDialAndEnd": false,
+          "autoDialDelaySeconds": 300,
+          "autoEndDelaySeconds": 300
+        },
+        "chat": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "email": {
+          "alertingTimeoutSeconds": 300,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 86400000
+          }
+        },
+        "message": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        }
+      },
+      "scoringMethod": "TimestampAndPriority",
+      "lastAgentRoutingMode": "AnyAgent",
+      "acwSettings": {
+        "wrapupPrompt": "OPTIONAL"
+      },
+      "skillEvaluationMethod": "ALL",
+      "autoAnswerOnly": false,
+      "defaultScripts": {},
+      "suppressInQueueCallRecording": true,
+      "selfUri": "/api/v2/routing/queues/50e6686b-a16f-4841-a278-e16ed8700f22"
+    },
+    {
+      "id": "eac9cf96-4fa7-407b-8336-4b67714898f0",
+      "name": "GasSerives_NewRequest_En",
+      "division": {
+        "id": "48251279-48e3-4357-8964-88dd7dc85af9",
+        "name": "Home",
+        "selfUri": "/api/v2/authorization/divisions/48251279-48e3-4357-8964-88dd7dc85af9"
+      },
+      "dateCreated": "2026-04-22T06:18:55.199Z",
+      "createdBy": "3aee1e22-ce2a-45dd-a2a6-52f0ed532fd0",
+      "memberCount": 0,
+      "userMemberCount": 0,
+      "joinedMemberCount": 0,
+      "mediaSettings": {
+        "call": {
+          "alertingTimeoutSeconds": 8,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "callback": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          },
+          "mode": "AgentFirst",
+          "enableAutoDialAndEnd": false,
+          "autoDialDelaySeconds": 300,
+          "autoEndDelaySeconds": 300
+        },
+        "chat": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "email": {
+          "alertingTimeoutSeconds": 300,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 86400000
+          }
+        },
+        "message": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        }
+      },
+      "scoringMethod": "TimestampAndPriority",
+      "lastAgentRoutingMode": "AnyAgent",
+      "acwSettings": {
+        "wrapupPrompt": "OPTIONAL"
+      },
+      "skillEvaluationMethod": "ALL",
+      "autoAnswerOnly": false,
+      "defaultScripts": {},
+      "suppressInQueueCallRecording": true,
+      "selfUri": "/api/v2/routing/queues/eac9cf96-4fa7-407b-8336-4b67714898f0"
+    },
+    {
+      "id": "9543deab-faff-412e-978e-999e5e292560",
+      "name": "Sales_FireFighting_Ar",
+      "division": {
+        "id": "48251279-48e3-4357-8964-88dd7dc85af9",
+        "name": "Home",
+        "selfUri": "/api/v2/authorization/divisions/48251279-48e3-4357-8964-88dd7dc85af9"
+      },
+      "dateCreated": "2026-04-22T06:20:45.155Z",
+      "createdBy": "3aee1e22-ce2a-45dd-a2a6-52f0ed532fd0",
+      "memberCount": 0,
+      "userMemberCount": 0,
+      "joinedMemberCount": 0,
+      "mediaSettings": {
+        "call": {
+          "alertingTimeoutSeconds": 8,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "callback": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          },
+          "mode": "AgentFirst",
+          "enableAutoDialAndEnd": false,
+          "autoDialDelaySeconds": 300,
+          "autoEndDelaySeconds": 300
+        },
+        "chat": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "email": {
+          "alertingTimeoutSeconds": 300,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 86400000
+          }
+        },
+        "message": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        }
+      },
+      "scoringMethod": "TimestampAndPriority",
+      "lastAgentRoutingMode": "AnyAgent",
+      "acwSettings": {
+        "wrapupPrompt": "OPTIONAL"
+      },
+      "skillEvaluationMethod": "ALL",
+      "autoAnswerOnly": false,
+      "defaultScripts": {},
+      "suppressInQueueCallRecording": true,
+      "selfUri": "/api/v2/routing/queues/9543deab-faff-412e-978e-999e5e292560"
+    },
+    {
+      "id": "e3a2f8d2-6c33-4a89-a7a8-b6091eef1c46",
+      "name": "Sales_FireFighting_En",
+      "division": {
+        "id": "48251279-48e3-4357-8964-88dd7dc85af9",
+        "name": "Home",
+        "selfUri": "/api/v2/authorization/divisions/48251279-48e3-4357-8964-88dd7dc85af9"
+      },
+      "dateCreated": "2026-04-22T06:20:55.474Z",
+      "createdBy": "3aee1e22-ce2a-45dd-a2a6-52f0ed532fd0",
+      "memberCount": 0,
+      "userMemberCount": 0,
+      "joinedMemberCount": 0,
+      "mediaSettings": {
+        "call": {
+          "alertingTimeoutSeconds": 8,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "callback": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          },
+          "mode": "AgentFirst",
+          "enableAutoDialAndEnd": false,
+          "autoDialDelaySeconds": 300,
+          "autoEndDelaySeconds": 300
+        },
+        "chat": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "email": {
+          "alertingTimeoutSeconds": 300,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 86400000
+          }
+        },
+        "message": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        }
+      },
+      "scoringMethod": "TimestampAndPriority",
+      "lastAgentRoutingMode": "AnyAgent",
+      "acwSettings": {
+        "wrapupPrompt": "OPTIONAL"
+      },
+      "skillEvaluationMethod": "ALL",
+      "autoAnswerOnly": false,
+      "defaultScripts": {},
+      "suppressInQueueCallRecording": true,
+      "selfUri": "/api/v2/routing/queues/e3a2f8d2-6c33-4a89-a7a8-b6091eef1c46"
+    },
+    {
+      "id": "0eba0770-a0bd-4b74-8bcb-17dca6dea235",
+      "name": "Sales_GasProjects_Ar",
+      "division": {
+        "id": "48251279-48e3-4357-8964-88dd7dc85af9",
+        "name": "Home",
+        "selfUri": "/api/v2/authorization/divisions/48251279-48e3-4357-8964-88dd7dc85af9"
+      },
+      "dateCreated": "2026-04-22T06:21:05.745Z",
+      "createdBy": "3aee1e22-ce2a-45dd-a2a6-52f0ed532fd0",
+      "memberCount": 0,
+      "userMemberCount": 0,
+      "joinedMemberCount": 0,
+      "mediaSettings": {
+        "call": {
+          "alertingTimeoutSeconds": 8,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "callback": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          },
+          "mode": "AgentFirst",
+          "enableAutoDialAndEnd": false,
+          "autoDialDelaySeconds": 300,
+          "autoEndDelaySeconds": 300
+        },
+        "chat": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "email": {
+          "alertingTimeoutSeconds": 300,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 86400000
+          }
+        },
+        "message": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        }
+      },
+      "scoringMethod": "TimestampAndPriority",
+      "lastAgentRoutingMode": "AnyAgent",
+      "acwSettings": {
+        "wrapupPrompt": "OPTIONAL"
+      },
+      "skillEvaluationMethod": "ALL",
+      "autoAnswerOnly": false,
+      "defaultScripts": {},
+      "suppressInQueueCallRecording": true,
+      "selfUri": "/api/v2/routing/queues/0eba0770-a0bd-4b74-8bcb-17dca6dea235"
+    },
+    {
+      "id": "bce61d39-92e6-4da8-a269-19d3c7603feb",
+      "name": "Sales_GasProjects_En",
+      "division": {
+        "id": "48251279-48e3-4357-8964-88dd7dc85af9",
+        "name": "Home",
+        "selfUri": "/api/v2/authorization/divisions/48251279-48e3-4357-8964-88dd7dc85af9"
+      },
+      "dateCreated": "2026-04-22T06:21:15.735Z",
+      "createdBy": "3aee1e22-ce2a-45dd-a2a6-52f0ed532fd0",
+      "memberCount": 0,
+      "userMemberCount": 0,
+      "joinedMemberCount": 0,
+      "mediaSettings": {
+        "call": {
+          "alertingTimeoutSeconds": 8,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "callback": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          },
+          "mode": "AgentFirst",
+          "enableAutoDialAndEnd": false,
+          "autoDialDelaySeconds": 300,
+          "autoEndDelaySeconds": 300
+        },
+        "chat": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "email": {
+          "alertingTimeoutSeconds": 300,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 86400000
+          }
+        },
+        "message": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        }
+      },
+      "scoringMethod": "TimestampAndPriority",
+      "lastAgentRoutingMode": "AnyAgent",
+      "acwSettings": {
+        "wrapupPrompt": "OPTIONAL"
+      },
+      "skillEvaluationMethod": "ALL",
+      "autoAnswerOnly": false,
+      "defaultScripts": {},
+      "suppressInQueueCallRecording": true,
+      "selfUri": "/api/v2/routing/queues/bce61d39-92e6-4da8-a269-19d3c7603feb"
+    },
+    {
+      "id": "69aeb2d1-e28a-402f-a66c-951943b1dd43",
+      "name": "Sales_Tanks_Cylinders_Ar",
+      "division": {
+        "id": "48251279-48e3-4357-8964-88dd7dc85af9",
+        "name": "Home",
+        "selfUri": "/api/v2/authorization/divisions/48251279-48e3-4357-8964-88dd7dc85af9"
+      },
+      "dateCreated": "2026-04-22T06:21:26.758Z",
+      "createdBy": "3aee1e22-ce2a-45dd-a2a6-52f0ed532fd0",
+      "memberCount": 0,
+      "userMemberCount": 0,
+      "joinedMemberCount": 0,
+      "mediaSettings": {
+        "call": {
+          "alertingTimeoutSeconds": 8,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "callback": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          },
+          "mode": "AgentFirst",
+          "enableAutoDialAndEnd": false,
+          "autoDialDelaySeconds": 300,
+          "autoEndDelaySeconds": 300
+        },
+        "chat": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "email": {
+          "alertingTimeoutSeconds": 300,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 86400000
+          }
+        },
+        "message": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        }
+      },
+      "scoringMethod": "TimestampAndPriority",
+      "lastAgentRoutingMode": "AnyAgent",
+      "acwSettings": {
+        "wrapupPrompt": "OPTIONAL"
+      },
+      "skillEvaluationMethod": "ALL",
+      "autoAnswerOnly": false,
+      "defaultScripts": {},
+      "suppressInQueueCallRecording": true,
+      "selfUri": "/api/v2/routing/queues/69aeb2d1-e28a-402f-a66c-951943b1dd43"
+    },
+    {
+      "id": "9cb0fe6f-5660-4a11-8b0c-44e41ed3737f",
+      "name": "Sales_Tanks_Cylinders_En",
+      "division": {
+        "id": "48251279-48e3-4357-8964-88dd7dc85af9",
+        "name": "Home",
+        "selfUri": "/api/v2/authorization/divisions/48251279-48e3-4357-8964-88dd7dc85af9"
+      },
+      "dateCreated": "2026-04-22T06:21:38.121Z",
+      "createdBy": "3aee1e22-ce2a-45dd-a2a6-52f0ed532fd0",
+      "memberCount": 0,
+      "userMemberCount": 0,
+      "joinedMemberCount": 0,
+      "mediaSettings": {
+        "call": {
+          "alertingTimeoutSeconds": 8,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "callback": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          },
+          "mode": "AgentFirst",
+          "enableAutoDialAndEnd": false,
+          "autoDialDelaySeconds": 300,
+          "autoEndDelaySeconds": 300
+        },
+        "chat": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        },
+        "email": {
+          "alertingTimeoutSeconds": 300,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 86400000
+          }
+        },
+        "message": {
+          "alertingTimeoutSeconds": 30,
+          "serviceLevel": {
+            "percentage": 0.8,
+            "durationMs": 20000
+          }
+        }
+      },
+      "scoringMethod": "TimestampAndPriority",
+      "lastAgentRoutingMode": "AnyAgent",
+      "acwSettings": {
+        "wrapupPrompt": "OPTIONAL"
+      },
+      "skillEvaluationMethod": "ALL",
+      "autoAnswerOnly": false,
+      "defaultScripts": {},
+      "suppressInQueueCallRecording": true,
+      "selfUri": "/api/v2/routing/queues/9cb0fe6f-5660-4a11-8b0c-44e41ed3737f"
+    }
+  ],
+  "pageSize": 25,
+  "pageNumber": 1,
+  "total": 18,
+  "firstUri": "/api/v2/routing/queues?pageSize=25&pageNumber=1",
+  "lastUri": "/api/v2/routing/queues?pageSize=25&pageNumber=1",
+  "selfUri": "/api/v2/routing/queues?pageSize=25&pageNumber=1",
+  "pageCount": 1
+}

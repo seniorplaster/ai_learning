@@ -1,0 +1,42 @@
+[
+  {
+    "call_id": "C2024-0091",
+    "agent_id": "AGT-101",
+    "csat_score": 5,
+    "resolved": true,
+    "ai_feedback": "*   **Strength:** Agent securely verified identity before processing request.\n*   **Improvement:** Clearly outline next steps and timeline for the limit decision.",
+    "status": "SUCCESS"
+  },
+  {
+    "call_id": "C2024-0092",
+    "agent_id": "AGT-205",
+    "csat_score": 2,
+    "resolved": false,
+    "ai_feedback": "*   Agent addressed the customer's reported unauthorized transaction.\n*   Enhance efficiency in locating transactions and provide proactive resolution timelines.",
+    "status": "SUCCESS"
+  },
+  {
+    "call_id": "C2024-0093",
+    "agent_id": "AGT-101",
+    "csat_score": 5,
+    "resolved": true,
+    "ai_feedback": "*   Efficiently resolved customer's balance inquiry.\n*   Proactively offer further assistance or support.",
+    "status": "SUCCESS"
+  },
+  {
+    "call_id": "C2024-0094",
+    "agent_id": "AGT-310",
+    "csat_score": 1,
+    "resolved": false,
+    "ai_feedback": "*   Agent acknowledged customer's initial concern.\n*   Improve explanation clarity and effective issue resolution.",
+    "status": "SUCCESS"
+  },
+  {
+    "call_id": "C2024-0095",
+    "agent_id": "AGT-205",
+    "csat_score": 4,
+    "resolved": true,
+    "ai_feedback": "*   Polite agent successfully resolved customer's statement reissue.\n*   Streamline email verification process to avoid delays.",
+    "status": "SUCCESS"
+  }
+]

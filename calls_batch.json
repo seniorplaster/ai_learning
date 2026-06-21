@@ -1,0 +1,42 @@
+[
+  {
+    "call_id": "C2024-0091",
+    "agent_id": "AGT-101",
+    "duration_seconds": 187,
+    "csat_score": 5,
+    "resolved": true,
+    "transcript_summary": "Customer asked about credit card limit increase. Agent verified identity, explained eligibility criteria, submitted request. Customer thanked agent."
+  },
+  {
+    "call_id": "C2024-0092",
+    "agent_id": "AGT-205",
+    "duration_seconds": 643,
+    "csat_score": 2,
+    "resolved": false,
+    "transcript_summary": "Customer reported unauthorized transaction. Agent took 8 minutes to locate the transaction, asked customer to repeat details twice, did not offer interim resolution timeline. Customer expressed frustration twice during the call."
+  },
+  {
+    "call_id": "C2024-0093",
+    "agent_id": "AGT-101",
+    "duration_seconds": 95,
+    "csat_score": 5,
+    "resolved": true,
+    "transcript_summary": "Quick balance inquiry, handled efficiently, customer satisfied."
+  },
+  {
+    "call_id": "C2024-0094",
+    "agent_id": "AGT-310",
+    "duration_seconds": 512,
+    "csat_score": 1,
+    "resolved": false,
+    "transcript_summary": "Customer called about a declined loan application. Agent was unable to explain the reason clearly, transferred customer twice without warning, call ended with no resolution and customer requesting a complaint be filed."
+  },
+  {
+    "call_id": "C2024-0095",
+    "agent_id": "AGT-205",
+    "duration_seconds": 298,
+    "csat_score": 4,
+    "resolved": true,
+    "transcript_summary": "Customer requested statement reissue. Agent handled politely, slight delay verifying email on file, resolved successfully."
+  }
+]

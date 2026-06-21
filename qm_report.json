@@ -1,0 +1,42 @@
+[
+  {
+    "call_id": "C2024-0091",
+    "agent_id": "AGT-101",
+    "csat_score": 5,
+    "resolved": true,
+    "ai_feedback": "*   Agent efficiently processed request, clearly explaining eligibility.\n*   Improvement: Set clear expectations for the approval timeline or next steps.",
+    "status": "SUCCESS"
+  },
+  {
+    "call_id": "C2024-0092",
+    "agent_id": "AGT-205",
+    "csat_score": 2,
+    "resolved": false,
+    "ai_feedback": "*   Agent engaged with the customer's reported transaction issue.\n*   Improve efficiency in locating transactions and setting expectations.",
+    "status": "SUCCESS"
+  },
+  {
+    "call_id": "C2024-0093",
+    "agent_id": "AGT-101",
+    "csat_score": 5,
+    "resolved": true,
+    "ai_feedback": "*   Swift, satisfactory service delivery.\n*   Explore additional customer needs.",
+    "status": "SUCCESS"
+  },
+  {
+    "call_id": "C2024-0094",
+    "agent_id": "AGT-310",
+    "csat_score": 1,
+    "resolved": false,
+    "ai_feedback": "*   **Strength:** Agent engaged the customer regarding their application issue.\n*   **Improvement:** Enhance explanation clarity and proper transfer procedure adherence.",
+    "status": "SUCCESS"
+  },
+  {
+    "call_id": "C2024-0095",
+    "agent_id": "AGT-205",
+    "csat_score": 4,
+    "resolved": true,
+    "ai_feedback": "*   Polite and professional customer interaction.\n*   Streamline email verification process to avoid delays.",
+    "status": "SUCCESS"
+  }
+]

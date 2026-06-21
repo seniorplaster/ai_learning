@@ -1,0 +1,52 @@
+[
+  {
+    "call_id": "C2024-0091",
+    "agent_id": "AGT-101",
+    "csat_score": 5,
+    "resolved": true,
+    "strength": "ERROR",
+    "improvement": "ERROR: 503 UNAVAILABLE. {'error': {'code': 503, 'message': 'This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.', 'status': 'UNAVAILABLE'}}",
+    "risk_flag": "Unknown",
+    "status": "FAILED"
+  },
+  {
+    "call_id": "C2024-0092",
+    "agent_id": "AGT-205",
+    "csat_score": 2,
+    "resolved": false,
+    "strength": "Agent addressed the reported transaction issue.",
+    "improvement": "Improve efficiency in locating data and active listening.",
+    "risk_flag": "Churn Risk",
+    "status": "SUCCESS"
+  },
+  {
+    "call_id": "C2024-0093",
+    "agent_id": "AGT-101",
+    "csat_score": 5,
+    "resolved": true,
+    "strength": "Efficient resolution, high customer satisfaction.",
+    "improvement": "Seek opportunities for deeper customer engagement.",
+    "risk_flag": "None",
+    "status": "SUCCESS"
+  },
+  {
+    "call_id": "C2024-0094",
+    "agent_id": "AGT-310",
+    "csat_score": 1,
+    "resolved": false,
+    "strength": "Agent engaged and attempted internal transfers.",
+    "improvement": "Mandate clear loan decline explanations and proper transfer protocol.",
+    "risk_flag": "Compliance Risk",
+    "status": "SUCCESS"
+  },
+  {
+    "call_id": "C2024-0095",
+    "agent_id": "AGT-205",
+    "csat_score": 4,
+    "resolved": true,
+    "strength": "Polite service and successful resolution.",
+    "improvement": "Streamline email verification process.",
+    "risk_flag": "None",
+    "status": "SUCCESS"
+  }
+]
