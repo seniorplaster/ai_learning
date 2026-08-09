@@ -37,44 +37,63 @@ header    {visibility: hidden;}
     padding-right: 2rem !important;
 }
 
-/* ── APP BACKGROUND ── */
+/* ── APP BACKGROUND — white main area ── */
 .stApp {
-    background: #070c18;
-    background-image:
-        radial-gradient(ellipse at 12% 40%, rgba(0,212,255,0.045) 0%, transparent 55%),
-        radial-gradient(ellipse at 88% 12%, rgba(37,99,235,0.06)  0%, transparent 55%),
-        radial-gradient(ellipse at 50% 95%, rgba(5,150,105,0.03)  0%, transparent 50%);
+    background: #f8fafc;
 }
 
-/* ── SIDEBAR ── */
+/* ── SIDEBAR — kept dark for contrast against white main ── */
 [data-testid="stSidebar"] {
-    background: linear-gradient(180deg, #030609 0%, #070c18 100%) !important;
+    background: linear-gradient(180deg, #0c1220 0%, #111827 100%) !important;
     border-right: 1px solid rgba(0,212,255,0.13) !important;
 }
 [data-testid="stSidebar"] > div:first-child { padding-top: 0 !important; }
 
-/* Sidebar buttons styled as nav items */
-[data-testid="stSidebar"] .stButton > button {
+/* ── SIDEBAR EXPANDERS ── */
+[data-testid="stSidebar"] [data-testid="stExpander"] {
     background: transparent !important;
-    color: #475569 !important;
-    border: 1px solid transparent !important;
+    border: 1px solid rgba(255,255,255,0.06) !important;
     border-radius: 8px !important;
-    text-align: left !important;
-    padding: 9px 14px !important;
+    margin-bottom: 4px !important;
+}
+[data-testid="stSidebar"] [data-testid="stExpander"]:hover {
+    border-color: rgba(0,212,255,0.18) !important;
+}
+[data-testid="stSidebar"] details summary {
+    color: #64748b !important;
     font-size: 12px !important;
     font-weight: 500 !important;
     letter-spacing: 0.05em !important;
+    padding: 4px 2px !important;
+}
+[data-testid="stSidebar"] details[open] summary {
+    color: #00d4ff !important;
+}
+[data-testid="stSidebar"] details summary svg {
+    color: #475569 !important;
+}
+[data-testid="stSidebar"] details[open] summary svg {
+    color: #00d4ff !important;
+}
+
+/* Sidebar inner buttons (View Preview) */
+[data-testid="stSidebar"] .stButton > button {
+    background: rgba(0,212,255,0.07) !important;
+    color: #00d4ff !important;
+    border: 1px solid rgba(0,212,255,0.2) !important;
+    border-radius: 6px !important;
+    font-size: 11px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.06em !important;
+    padding: 5px 12px !important;
     transition: all 0.18s ease !important;
-    margin-bottom: 2px !important;
-    justify-content: flex-start !important;
     box-shadow: none !important;
     transform: none !important;
     width: 100% !important;
 }
 [data-testid="stSidebar"] .stButton > button:hover {
-    background: rgba(0,212,255,0.06) !important;
-    color: #94a3b8 !important;
-    border-color: rgba(0,212,255,0.12) !important;
+    background: rgba(0,212,255,0.14) !important;
+    border-color: rgba(0,212,255,0.4) !important;
     transform: none !important;
     box-shadow: none !important;
 }
@@ -82,9 +101,9 @@ header    {visibility: hidden;}
 /* ── MAIN AREA BUTTONS ── */
 .main .stButton > button,
 [data-testid="stMainBlockContainer"] .stButton > button {
-    background: linear-gradient(135deg, #0f2a5e, #0a1a3d) !important;
-    color: #00d4ff !important;
-    border: 1px solid rgba(0,212,255,0.32) !important;
+    background: #1d4ed8 !important;
+    color: #ffffff !important;
+    border: 1px solid #1d4ed8 !important;
     border-radius: 8px !important;
     font-weight: 600 !important;
     font-size: 13px !important;
@@ -92,14 +111,14 @@ header    {visibility: hidden;}
     padding: 0.55rem 1.4rem !important;
     transition: all 0.2s ease !important;
     width: 100% !important;
+    box-shadow: 0 1px 3px rgba(29,78,216,0.25) !important;
 }
 .main .stButton > button:hover,
 [data-testid="stMainBlockContainer"] .stButton > button:hover {
-    background: linear-gradient(135deg, #183880, #0f2060) !important;
-    border-color: #00d4ff !important;
-    box-shadow: 0 0 22px rgba(0,212,255,0.22), inset 0 0 12px rgba(0,212,255,0.03) !important;
+    background: #1e40af !important;
+    border-color: #1e40af !important;
+    box-shadow: 0 4px 14px rgba(29,78,216,0.3) !important;
     transform: translateY(-1px) !important;
-    color: #ffffff !important;
 }
 .main .stButton > button:active,
 [data-testid="stMainBlockContainer"] .stButton > button:active {
@@ -108,9 +127,9 @@ header    {visibility: hidden;}
 
 /* ── DOWNLOAD BUTTON ── */
 .stDownloadButton > button {
-    background: linear-gradient(135deg, #054335, #065040) !important;
-    color: #10b981 !important;
-    border: 1px solid rgba(16,185,129,0.3) !important;
+    background: #065f46 !important;
+    color: #ffffff !important;
+    border: 1px solid #065f46 !important;
     border-radius: 8px !important;
     font-weight: 600 !important;
     font-size: 13px !important;
@@ -118,24 +137,25 @@ header    {visibility: hidden;}
     width: 100% !important;
     padding: 0.55rem 1.4rem !important;
     transition: all 0.2s ease !important;
+    box-shadow: 0 1px 3px rgba(6,95,70,0.25) !important;
 }
 .stDownloadButton > button:hover {
-    box-shadow: 0 0 22px rgba(16,185,129,0.2) !important;
-    color: #ffffff !important;
+    background: #064e3b !important;
+    box-shadow: 0 4px 14px rgba(6,95,70,0.3) !important;
     transform: translateY(-1px) !important;
 }
 
 /* ── TABS ── */
 .stTabs [data-baseweb="tab-list"] {
-    background: #0b1322 !important;
+    background: #f1f5f9 !important;
     border-radius: 10px !important;
     padding: 5px !important;
     gap: 4px !important;
-    border: 1px solid rgba(0,212,255,0.1) !important;
+    border: 1px solid #e2e8f0 !important;
 }
 .stTabs [data-baseweb="tab"] {
     background: transparent !important;
-    color: #475569 !important;
+    color: #64748b !important;
     border-radius: 7px !important;
     padding: 9px 24px !important;
     font-weight: 500 !important;
@@ -145,28 +165,30 @@ header    {visibility: hidden;}
     transition: color 0.15s !important;
 }
 .stTabs [aria-selected="true"] {
-    background: linear-gradient(135deg, rgba(0,212,255,0.13), rgba(37,99,235,0.13)) !important;
-    color: #00d4ff !important;
-    border: 1px solid rgba(0,212,255,0.28) !important;
+    background: #ffffff !important;
+    color: #1d4ed8 !important;
+    border: 1px solid #e2e8f0 !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08) !important;
 }
 .stTabs [data-baseweb="tab-panel"] { padding-top: 1.8rem !important; }
 
 /* ── METRICS ── */
 [data-testid="metric-container"] {
-    background: linear-gradient(135deg, #090f1f, #0b1220) !important;
-    border: 1px solid rgba(0,212,255,0.1) !important;
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
     border-radius: 12px !important;
     padding: 1rem 1.2rem !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
 }
 [data-testid="stMetricLabel"] {
-    color: #475569 !important;
+    color: #64748b !important;
     font-size: 11px !important;
     letter-spacing: 0.1em !important;
     text-transform: uppercase !important;
     font-weight: 600 !important;
 }
 [data-testid="stMetricValue"] {
-    color: #00d4ff !important;
+    color: #1d4ed8 !important;
     font-size: 24px !important;
     font-weight: 700 !important;
     font-family: 'JetBrains Mono', monospace !important;
@@ -176,61 +198,63 @@ header    {visibility: hidden;}
 /* ── DATAFRAME ── */
 .stDataFrame { border-radius: 12px !important; overflow: hidden !important; }
 [data-testid="stDataFrameResizable"] {
-    border: 1px solid rgba(0,212,255,0.1) !important;
+    border: 1px solid #e2e8f0 !important;
     border-radius: 12px !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05) !important;
 }
 
 /* ── ALERTS ── */
 [data-baseweb="notification"] {
-    background-color: rgba(0,212,255,0.07) !important;
-    border: 1px solid rgba(0,212,255,0.18) !important;
+    background-color: #eff6ff !important;
+    border: 1px solid #bfdbfe !important;
     border-radius: 10px !important;
 }
 
 /* ── SCROLLBAR ── */
 ::-webkit-scrollbar { width: 4px; height: 4px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: rgba(0,212,255,0.2); border-radius: 2px; }
-::-webkit-scrollbar-thumb:hover { background: rgba(0,212,255,0.4); }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
 
-/* ── COMPONENT CLASSES ── */
+/* ── COMPONENT CLASSES — light versions ── */
 .aria-card {
-    background: linear-gradient(135deg, #090f1f, #0b1525);
-    border: 1px solid rgba(0,212,255,0.1);
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
     border-radius: 14px;
     padding: 20px 24px;
     margin-bottom: 14px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
 .aria-card-green {
-    background: linear-gradient(135deg, #03110a, #041510);
-    border: 1px solid rgba(5,150,105,0.18);
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
     border-radius: 14px;
     padding: 20px 24px;
     margin-bottom: 14px;
 }
 .aria-card-amber {
-    background: linear-gradient(135deg, #140d03, #180f04);
-    border: 1px solid rgba(245,158,11,0.18);
+    background: #fffbeb;
+    border: 1px solid #fde68a;
     border-radius: 14px;
     padding: 20px 24px;
     margin-bottom: 14px;
 }
 .aria-card-red {
-    background: linear-gradient(135deg, #130404, #170505);
-    border: 1px solid rgba(239,68,68,0.22);
+    background: #fef2f2;
+    border: 1px solid #fecaca;
     border-radius: 14px;
     padding: 20px 24px;
     margin-bottom: 14px;
 }
 .gradient-text {
-    background: linear-gradient(135deg, #00d4ff, #2563eb);
+    background: linear-gradient(135deg, #2563eb, #0ea5e9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     font-weight: 700;
 }
 .gradient-text-green {
-    background: linear-gradient(135deg, #10b981, #059669);
+    background: linear-gradient(135deg, #059669, #10b981);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -238,15 +262,15 @@ header    {visibility: hidden;}
 }
 .mono { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #64748b; }
 .section-label {
-    font-size: 10px; font-weight: 600; color: #334155;
+    font-size: 10px; font-weight: 600; color: #94a3b8;
     text-transform: uppercase; letter-spacing: 0.14em; margin-bottom: 6px;
 }
-.badge-online  { display:inline-block; background:rgba(5,150,105,0.12);  color:#10b981; border:1px solid rgba(5,150,105,0.25);  border-radius:99px; padding:2px 10px; font-size:10px; font-weight:600; letter-spacing:0.08em; }
-.badge-blue    { display:inline-block; background:rgba(0,212,255,0.1);   color:#00d4ff; border:1px solid rgba(0,212,255,0.25);  border-radius:99px; padding:2px 10px; font-size:10px; font-weight:600; letter-spacing:0.08em; }
-.badge-amber   { display:inline-block; background:rgba(245,158,11,0.1);  color:#f59e0b; border:1px solid rgba(245,158,11,0.25); border-radius:99px; padding:2px 10px; font-size:10px; font-weight:600; letter-spacing:0.08em; }
-.badge-red     { display:inline-block; background:rgba(239,68,68,0.1);   color:#ef4444; border:1px solid rgba(239,68,68,0.25);  border-radius:99px; padding:2px 10px; font-size:10px; font-weight:600; letter-spacing:0.08em; }
-.badge-gray    { display:inline-block; background:rgba(100,116,139,0.1); color:#94a3b8; border:1px solid rgba(100,116,139,0.2); border-radius:99px; padding:2px 10px; font-size:10px; font-weight:600; letter-spacing:0.08em; }
-.badge-lock    { display:inline-block; background:rgba(51,65,85,0.4);    color:#475569; border:1px solid rgba(51,65,85,0.5);    border-radius:99px; padding:2px 8px;  font-size:9px;  font-weight:600; letter-spacing:0.08em; }
+.badge-online  { display:inline-block; background:#dcfce7; color:#16a34a; border:1px solid #bbf7d0; border-radius:99px; padding:2px 10px; font-size:10px; font-weight:600; letter-spacing:0.08em; }
+.badge-blue    { display:inline-block; background:#eff6ff; color:#2563eb; border:1px solid #bfdbfe; border-radius:99px; padding:2px 10px; font-size:10px; font-weight:600; letter-spacing:0.08em; }
+.badge-amber   { display:inline-block; background:#fffbeb; color:#d97706; border:1px solid #fde68a; border-radius:99px; padding:2px 10px; font-size:10px; font-weight:600; letter-spacing:0.08em; }
+.badge-red     { display:inline-block; background:#fef2f2; color:#dc2626; border:1px solid #fecaca; border-radius:99px; padding:2px 10px; font-size:10px; font-weight:600; letter-spacing:0.08em; }
+.badge-gray    { display:inline-block; background:#f8fafc; color:#64748b; border:1px solid #e2e8f0; border-radius:99px; padding:2px 10px; font-size:10px; font-weight:600; letter-spacing:0.08em; }
+.badge-lock    { display:inline-block; background:#f1f5f9; color:#94a3b8; border:1px solid #e2e8f0; border-radius:99px; padding:2px 8px;  font-size:9px;  font-weight:600; letter-spacing:0.08em; }
 .dot-green { display:inline-block; width:7px; height:7px; background:#10b981; border-radius:50%; box-shadow:0 0 7px #10b981; animation:pulse-g 2.2s infinite; }
 .dot-blue  { display:inline-block; width:7px; height:7px; background:#00d4ff; border-radius:50%; box-shadow:0 0 7px #00d4ff; animation:pulse-b 2.2s infinite; }
 .dot-amber { display:inline-block; width:7px; height:7px; background:#f59e0b; border-radius:50%; box-shadow:0 0 5px #f59e0b; }
@@ -254,18 +278,19 @@ header    {visibility: hidden;}
 @keyframes pulse-b { 0%,100%{opacity:1;} 55%{opacity:0.45;} }
 
 .scan-bar {
-    height: 1px;
-    background: linear-gradient(90deg, transparent 0%, #00d4ff 40%, #2563eb 60%, transparent 100%);
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, #2563eb 40%, #0ea5e9 60%, transparent 100%);
     animation: scan 4s ease-in-out infinite;
-    opacity: 0.6;
+    opacity: 0.4;
     border-radius: 1px;
     margin: 6px 0 18px;
 }
-@keyframes scan { 0%{opacity:0.15;} 50%{opacity:0.7;} 100%{opacity:0.15;} }
+@keyframes scan { 0%{opacity:0.1;} 50%{opacity:0.5;} 100%{opacity:0.1;} }
 
+/* ── COACHING TERMINAL — kept dark intentionally (code-editor aesthetic) ── */
 .coaching-terminal {
-    background: #04080f;
-    border: 1px solid rgba(0,212,255,0.18);
+    background: #0f172a;
+    border: 1px solid #334155;
     border-radius: 12px;
     padding: 24px 28px;
     font-family: 'JetBrains Mono', monospace;
@@ -274,29 +299,30 @@ header    {visibility: hidden;}
     color: #cbd5e1;
     min-height: 120px;
     position: relative;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
 }
 .coaching-terminal::before {
     content: "ARIA COACHING ENGINE  •  OUTPUT STREAM";
     display: block;
     font-size: 9px;
-    color: #334155;
+    color: #475569;
     letter-spacing: 0.14em;
     margin-bottom: 16px;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgba(0,212,255,0.07);
+    border-bottom: 1px solid #1e293b;
 }
-.detail-label { font-size: 10px; color: #334155; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600; margin-bottom: 3px; }
-.detail-value { font-size: 14px; color: #e2e8f0; font-weight: 500; margin-bottom: 14px; }
+.detail-label { font-size: 10px; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.12em; font-weight: 600; margin-bottom: 3px; }
+.detail-value { font-size: 14px; color: #0f172a; font-weight: 500; margin-bottom: 14px; }
 .detail-mono  { font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #64748b; margin-bottom: 14px; }
 
 .progress-track {
-    background: #0d1526;
+    background: #f1f5f9;
     border-radius: 99px;
     height: 4px;
     overflow: hidden;
-    border: 1px solid rgba(0,212,255,0.07);
+    border: 1px solid #e2e8f0;
 }
-.progress-fill-blue  { height: 100%; background: linear-gradient(90deg, #2563eb, #00d4ff); border-radius: 99px; }
+.progress-fill-blue  { height: 100%; background: linear-gradient(90deg, #2563eb, #0ea5e9); border-radius: 99px; }
 .progress-fill-green { height: 100%; background: linear-gradient(90deg, #059669, #10b981); border-radius: 99px; }
 .progress-fill-amber { height: 100%; background: linear-gradient(90deg, #d97706, #f59e0b); border-radius: 99px; }
 </style>
@@ -621,47 +647,117 @@ def stream_coaching(call: dict):
 # ── SIDEBAR ───────────────────────────────────────────────────────────────
 def render_sidebar():
     with st.sidebar:
-        # Logo / brand
+        # ── Logo / brand ─────────────────────────────────────────────────
         st.markdown(f"""
-        <div style="padding:22px 18px 18px;border-bottom:1px solid rgba(0,212,255,0.1);margin-bottom:8px;">
+        <div style="padding:22px 18px 18px;border-bottom:1px solid rgba(0,212,255,0.1);margin-bottom:12px;">
             <div style="font-size:21px;font-weight:700;letter-spacing:0.14em;
                         background:linear-gradient(135deg,#00d4ff,#2563eb);
                         -webkit-background-clip:text;-webkit-text-fill-color:transparent;
                         background-clip:text;">
                 ⬡ {PLATFORM}
             </div>
-            <div style="font-size:9.5px;color:#334155;letter-spacing:0.14em;
+            <div style="font-size:9.5px;color:#475569;letter-spacing:0.14em;
                         text-transform:uppercase;margin-top:5px;line-height:1.5;">
                 {TAGLINE}
             </div>
         </div>
         """, unsafe_allow_html=True)
 
-        st.markdown('<div class="section-label" style="padding:10px 18px 4px;">Platform Modules</div>',
+        st.markdown('<div class="section-label" style="padding:0 4px 8px;">Platform Modules</div>',
                     unsafe_allow_html=True)
 
+        # ── Expandable module tree ────────────────────────────────────────
         for mod in MODULES:
-            lock = "" if mod["available"] else "  ⋯"
-            label = f"{mod['icon']}  {mod['name'].upper()}{lock}"
             is_active = st.session_state.active_module == mod["key"]
 
-            # Highlight active module with a glow strip
-            if is_active:
-                st.markdown(
-                    f'<div style="margin:1px 8px;padding:9px 10px;'
-                    f'background:rgba(0,212,255,0.07);border:1px solid rgba(0,212,255,0.2);'
-                    f'border-radius:8px;font-size:12px;font-weight:600;letter-spacing:0.05em;'
-                    f'color:#00d4ff;cursor:default;">{label}</div>',
-                    unsafe_allow_html=True
-                )
-            else:
-                if st.button(label, key=f"nav_{mod['key']}", use_container_width=True):
-                    st.session_state.active_module = mod["key"]
-                    st.rerun()
+            if mod["available"]:
+                # ── Active / available module ─────────────────────────
+                exp_label = f"{mod['icon']}  {mod['name']}"
+                with st.expander(exp_label, expanded=is_active):
+                    st.markdown("""
+                    <div style="padding:4px 0 2px;">
+                        <div style="font-size:10px;color:#334155;font-weight:600;
+                                    text-transform:uppercase;letter-spacing:0.1em;margin-bottom:8px;">
+                            Sub-sections
+                        </div>
+                    </div>
+                    """, unsafe_allow_html=True)
 
-        # System status
+                    sub_sections = [
+                        ("◈", "Call Intelligence",   "View all 9 call records"),
+                        ("⬡", "AI Coaching Engine",  "Stream AI coaching reports"),
+                        ("⬇", "Reports & Export",    "Download analysis data"),
+                    ]
+                    for icon, name, desc in sub_sections:
+                        st.markdown(f"""
+                        <div style="display:flex;align-items:center;gap:10px;
+                                    padding:7px 10px;border-radius:6px;margin-bottom:3px;
+                                    background:rgba(0,212,255,0.05);
+                                    border:1px solid rgba(0,212,255,0.1);">
+                            <span style="color:#00d4ff;font-size:13px;">{icon}</span>
+                            <div>
+                                <div style="font-size:12px;color:#94a3b8;font-weight:500;">{name}</div>
+                                <div style="font-size:10px;color:#334155;margin-top:1px;">{desc}</div>
+                            </div>
+                        </div>
+                        """, unsafe_allow_html=True)
+
+                    if not is_active:
+                        if st.button("Open Module", key=f"open_{mod['key']}"):
+                            st.session_state.active_module = mod["key"]
+                            st.rerun()
+
+            else:
+                # ── Coming soon module ────────────────────────────────
+                progress   = mod.get("progress", 0)
+                milestones = mod.get("milestones", [])
+                done_count = sum(1 for _, d in milestones if d)
+                total_ms   = len(milestones)
+
+                exp_label = f"{mod['icon']}  {mod['name']}"
+                with st.expander(exp_label, expanded=False):
+                    # Progress bar
+                    fill_color = (
+                        "#10b981" if progress >= 80 else
+                        "#f59e0b" if progress >= 50 else
+                        "#2563eb"
+                    )
+                    st.markdown(f"""
+                    <div style="padding:4px 0 10px;">
+                        <div style="display:flex;justify-content:space-between;
+                                    font-size:10px;color:#475569;font-weight:600;
+                                    text-transform:uppercase;letter-spacing:0.08em;margin-bottom:6px;">
+                            <span>Development Progress</span>
+                            <span style="color:{fill_color};">{progress}%</span>
+                        </div>
+                        <div style="background:#1e293b;border-radius:99px;height:4px;overflow:hidden;">
+                            <div style="width:{progress}%;height:100%;
+                                        background:{fill_color};border-radius:99px;"></div>
+                        </div>
+                        <div style="font-size:10px;color:#334155;margin-top:6px;">
+                            {done_count} of {total_ms} milestones complete
+                        </div>
+                    </div>
+                    """, unsafe_allow_html=True)
+
+                    # Milestone list
+                    for milestone_name, done in milestones:
+                        icon  = "✓" if done else "○"
+                        color = "#10b981" if done else "#334155"
+                        st.markdown(
+                            f'<div style="font-size:11px;color:{color};padding:2px 0;">'
+                            f'{icon}&nbsp;&nbsp;{milestone_name}</div>',
+                            unsafe_allow_html=True
+                        )
+
+                    st.markdown("<div style='height:8px'></div>", unsafe_allow_html=True)
+                    if st.button("View Preview →", key=f"nav_{mod['key']}"):
+                        st.session_state.active_module = mod["key"]
+                        st.rerun()
+
+        # ── System status ─────────────────────────────────────────────────
         st.markdown("""
-        <div style="padding:18px 18px 10px;margin-top:16px;
+        <div style="padding:16px 4px 10px;margin-top:12px;
                     border-top:1px solid rgba(0,212,255,0.07);">
             <div class="section-label">System Status</div>
             <div style="font-size:12px;color:#64748b;margin-top:10px;line-height:2.2;">
@@ -675,9 +771,9 @@ def render_sidebar():
         </div>
         """, unsafe_allow_html=True)
 
-        # Footer
+        # ── Footer ────────────────────────────────────────────────────────
         st.markdown(f"""
-        <div style="padding:12px 18px 18px;border-top:1px solid rgba(0,212,255,0.05);">
+        <div style="padding:12px 4px 18px;border-top:1px solid rgba(0,212,255,0.05);margin-top:4px;">
             <div class="mono" style="font-size:10px;">
                 {VERSION} &nbsp;|&nbsp; Build {BUILD_DATE}
             </div>
