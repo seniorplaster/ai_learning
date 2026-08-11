@@ -33,21 +33,62 @@ defaults = {
     "coach_queue":      [],
     "coach_triggered":  False,
     "coaching_results": {},
-    "sidebar_open":     True,
 }
 for k, v in defaults.items():
     if k not in st.session_state:
         st.session_state[k] = v
 
-# ── SIDEBAR VISIBILITY CSS ───────────────────────────────────────────────────────
-if not st.session_state.sidebar_open:
-    st.markdown("""
-    <style>
-    [data-testid="stSidebar"]         { display: none !important; }
-    [data-testid="collapsedControl"]  { display: none !important; }
-    .block-container                  { padding-left: 1.5rem !important; }
-    </style>
-    """, unsafe_allow_html=True)
+# ── ALWAYS-VISIBLE MENU BUTTON (JS toggles native Streamlit sidebar) ─────────────
+# Injected once, before everything else — persists across all reruns
+st.markdown("""
+<button id="menu-toggle-btn" onclick="(function(){
+    var c = window.parent.document.querySelector('[data-testid=collapsedControl]');
+    if (c) { c.click(); return; }
+    var selectors = [
+        'button[aria-label=\\"Close sidebar\\"]',
+        'button[title=\\"Close sidebar\\"]',
+        '[data-testid=stSidebarCollapseButton]',
+        '[data-testid=stSidebarCloseButton]'
+    ];
+    for (var s of selectors) {
+        var b = window.parent.document.querySelector(s);
+        if (b) { b.click(); return; }
+    }
+    var all = window.parent.document.querySelectorAll(
+        'section[data-testid=stSidebar] button, [data-testid=stSidebar] button'
+    );
+    if (all.length > 0) all[0].click();
+})()"
+style="
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 9999999;
+    background: #1e40af;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 16px 8px 12px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: Inter, sans-serif;
+    letter-spacing: 0.04em;
+    box-shadow: 0 2px 8px rgba(30,64,175,0.35);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    line-height: 1;
+    transition: background 0.15s;
+" onmouseover="this.style.background='#1e3a8a'"
+  onmouseout="this.style.background='#1e40af'">
+    ☰ &nbsp;Menu
+</button>
+<style>
+/* Push page content right so Menu button never overlaps the first word */
+.block-container { padding-top: 1.8rem !important; }
+</style>
+""", unsafe_allow_html=True)
 
 # ── GLOBAL CSS ───────────────────────────────────────────────────────────────────
 st.markdown("""
@@ -655,23 +696,15 @@ def coaching_box(text: str):
 # ── SIDEBAR ───────────────────────────────────────────────────────────────────────
 def render_sidebar():
     with st.sidebar:
-        # ── Header row: brand + collapse button ──────────────────────────
-        col_brand, col_close = st.columns([3, 1])
-        with col_brand:
-            st.markdown(f"""
-            <div style="padding:18px 0 14px;">
-                <div style="font-size:19px;font-weight:700;letter-spacing:0.1em;color:#58a6ff;">
-                    ⬡ {PLATFORM}
-                </div>
-                <div style="font-size:9.5px;color:#8b949e;letter-spacing:0.12em;
-                            text-transform:uppercase;margin-top:4px;">{TAGLINE}</div>
-            </div>""", unsafe_allow_html=True)
-        with col_close:
-            st.markdown("<div style='padding-top:18px;'>", unsafe_allow_html=True)
-            if st.button("✕", key="close_sb", help="Collapse sidebar"):
-                st.session_state.sidebar_open = False
-                st.rerun()
-            st.markdown("</div>", unsafe_allow_html=True)
+        # ── Brand ────────────────────────────────────────────────────────
+        st.markdown(f"""
+        <div style="padding:20px 4px 14px;">
+            <div style="font-size:19px;font-weight:700;letter-spacing:0.1em;color:#58a6ff;">
+                ⬡ {PLATFORM}
+            </div>
+            <div style="font-size:9.5px;color:#8b949e;letter-spacing:0.12em;
+                        text-transform:uppercase;margin-top:4px;">{TAGLINE}</div>
+        </div>""", unsafe_allow_html=True)
 
         st.markdown('<div style="border-top:1px solid #21262d;margin-bottom:12px;"></div>', unsafe_allow_html=True)
         st.markdown('<div style="font-size:10px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:0.14em;margin-bottom:8px;">Platform Modules</div>', unsafe_allow_html=True)
@@ -750,14 +783,6 @@ def render_sidebar():
 # ── QM ANALYZER ──────────────────────────────────────────────────────────────────
 def render_qm():
     import pandas as pd
-
-    # ── Sidebar re-open button (visible only when sidebar is closed) ──────
-    if not st.session_state.sidebar_open:
-        top_col, _ = st.columns([0.6, 11.4])
-        with top_col:
-            if st.button("☰", key="open_sb_main", help="Open sidebar"):
-                st.session_state.sidebar_open = True
-                st.rerun()
 
     # ── Page header ───────────────────────────────────────────────────────
     st.markdown(f"""
@@ -1099,13 +1124,6 @@ def render_coming_soon(mod: dict):
     milestones = mod.get("milestones", [])
     fc = "pfill-green" if progress>=80 else "pfill-amber" if progress>=50 else "pfill-blue"
 
-    if not st.session_state.sidebar_open:
-        col_o, _ = st.columns([0.6, 11.4])
-        with col_o:
-            if st.button("☰", key="open_sb_cs", help="Open sidebar"):
-                st.session_state.sidebar_open = True
-                st.rerun()
-
     st.markdown(f"""
     <div style="padding-bottom:14px;border-bottom:2px solid #e2e8f0;margin-bottom:24px;">
         <div style="font-size:10px;color:#9ca3af;letter-spacing:0.12em;text-transform:uppercase;font-weight:700;margin-bottom:6px;">
@@ -1154,8 +1172,7 @@ def render_coming_soon(mod: dict):
 
 
 # ── MAIN ROUTING ──────────────────────────────────────────────────────────────────
-if st.session_state.sidebar_open:
-    render_sidebar()
+render_sidebar()
 
 active = st.session_state.active_module
 if active == "qm":
