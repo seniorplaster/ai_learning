@@ -33,62 +33,21 @@ defaults = {
     "coach_queue":      [],
     "coach_triggered":  False,
     "coaching_results": {},
+    "sidebar_open":     True,     # controls sidebar via CSS + conditional render
 }
 for k, v in defaults.items():
     if k not in st.session_state:
         st.session_state[k] = v
 
-# ── ALWAYS-VISIBLE MENU BUTTON (JS toggles native Streamlit sidebar) ─────────────
-# Injected once, before everything else — persists across all reruns
-st.markdown("""
-<button id="menu-toggle-btn" onclick="(function(){
-    var c = window.parent.document.querySelector('[data-testid=collapsedControl]');
-    if (c) { c.click(); return; }
-    var selectors = [
-        'button[aria-label=\\"Close sidebar\\"]',
-        'button[title=\\"Close sidebar\\"]',
-        '[data-testid=stSidebarCollapseButton]',
-        '[data-testid=stSidebarCloseButton]'
-    ];
-    for (var s of selectors) {
-        var b = window.parent.document.querySelector(s);
-        if (b) { b.click(); return; }
-    }
-    var all = window.parent.document.querySelectorAll(
-        'section[data-testid=stSidebar] button, [data-testid=stSidebar] button'
-    );
-    if (all.length > 0) all[0].click();
-})()"
-style="
-    position: fixed;
-    top: 12px;
-    left: 12px;
-    z-index: 9999999;
-    background: #1e40af;
-    color: #ffffff;
-    border: none;
-    border-radius: 8px;
-    padding: 8px 16px 8px 12px;
-    cursor: pointer;
-    font-size: 13px;
-    font-weight: 700;
-    font-family: Inter, sans-serif;
-    letter-spacing: 0.04em;
-    box-shadow: 0 2px 8px rgba(30,64,175,0.35);
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    line-height: 1;
-    transition: background 0.15s;
-" onmouseover="this.style.background='#1e3a8a'"
-  onmouseout="this.style.background='#1e40af'">
-    ☰ &nbsp;Menu
-</button>
-<style>
-/* Push page content right so Menu button never overlaps the first word */
-.block-container { padding-top: 1.8rem !important; }
-</style>
-""", unsafe_allow_html=True)
+# ── SIDEBAR VISIBILITY CSS (injected when sidebar is closed) ─────────────────────
+if not st.session_state.sidebar_open:
+    st.markdown("""
+    <style>
+    [data-testid="stSidebar"]        { display: none !important; }
+    [data-testid="collapsedControl"] { display: none !important; }
+    .block-container                 { padding-left: 1.5rem !important; }
+    </style>
+    """, unsafe_allow_html=True)
 
 # ── GLOBAL CSS ───────────────────────────────────────────────────────────────────
 st.markdown("""
@@ -117,12 +76,8 @@ header    {visibility: hidden;}
 }
 [data-testid="stSidebar"] > div:first-child { padding-top: 0 !important; }
 
-/* Streamlit native sidebar collapse arrow — styled to be visible */
-[data-testid="collapsedControl"] {
-    background: #0d1117 !important;
-    border-right: 2px solid #30363d !important;
-}
-[data-testid="collapsedControl"] svg { fill: #58a6ff !important; }
+/* Native sidebar collapse arrow — hidden so our Menu button is the only control */
+[data-testid="collapsedControl"] { display: none !important; }
 
 /* ── SIDEBAR EXPANDERS ── */
 [data-testid="stSidebar"] [data-testid="stExpander"] {
@@ -1172,7 +1127,18 @@ def render_coming_soon(mod: dict):
 
 
 # ── MAIN ROUTING ──────────────────────────────────────────────────────────────────
-render_sidebar()
+# ☰ Menu button — always the first element on the page, always visible
+# Uses session state + CSS to control sidebar, no JavaScript needed
+_mc, _ = st.columns([0.9, 11.1])
+with _mc:
+    _lbl = "☰  Menu" if not st.session_state.sidebar_open else "✕  Menu"
+    if st.button(_lbl, key="sidebar_toggle"):
+        st.session_state.sidebar_open = not st.session_state.sidebar_open
+        st.rerun()
+
+# Render sidebar only when open
+if st.session_state.sidebar_open:
+    render_sidebar()
 
 active = st.session_state.active_module
 if active == "qm":
